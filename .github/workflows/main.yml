@@ -21,8 +21,8 @@ jobs:
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
-          server: echo "SERVER_HOST=${{ secrets.SERVER_HOST }}" >> $GITHUB_ENV
-          username: echo FTP_USERNAME=${{ secrets.FTP_USERNAME }}" >> $GITHUB_ENV
-          password: echo "FTP_PASSWORD=${{ secrets.FTP_PASSWORD }}" >> $GITHUB_ENV
+          server: echo "${{ secrets.SERVER_HOST }}" >> $GITHUB_ENV
+          username: echo "${{ secrets.FTP_USERNAME }}" >> $GITHUB_ENV
+          password: echo "{{ secrets.FTP_PASSWORD }}" >> $GITHUB_ENV
           local-dir: dist/
           server-dir: /03/

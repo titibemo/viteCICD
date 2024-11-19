@@ -27,8 +27,8 @@ jobs:
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
-          Server: $SERVER_HOST
-          Username: $FTP_USERNAME
-          Password: $FTP_PASSWORD
+          server: ${{ env.SERVER_HOST }}
+          username: ${{ env.FTP_USERNAME }}
+          password: ${{ env.FTP_PASSWORD }}
           local-dir: dist/
           server-dir: /03/

@@ -25,4 +25,4 @@ jobs:
           username: 03@01-web.formation-adapeco-sofip.com
           password: aqFbABLGFz6wVhLe
           local-dir: dist/
-          server-dir: /12/
+          server-dir: /03/

@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <h1>Thierry</h1>
+  <h1>YEAH J'ai réussi - Thierry -</h1>
 </template>
 
 <style scoped>
